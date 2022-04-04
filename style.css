@@ -1,3 +1,5 @@
+/*global styles*/
+
 * {
     margin: 0px;
     padding: 0px;
@@ -21,7 +23,6 @@ p {
     --bottom_header_color: #F0E5E5;
 }
 
-
 .top_header {
     height: 68px;
     background-color: var(--top_header_color);
@@ -32,7 +33,7 @@ p {
     display: inline-flex;
     color: #fff;
     font-family: oswald;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     margin-left: 15px;
     align-self: center;
@@ -42,14 +43,16 @@ p {
     border-style: solid;
     border-color: #fff;
     border-radius: 15px;
-    padding: 0px 18px 0px 18px;
+    padding: 0px 15px 0px 15px;
+    position: absolute;
+    right: 200px;
 }
 
 .Bottom_header {
     height: 95px;
     background-color: var(--bottom_header_color);
     font-family: oswald;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -57,11 +60,53 @@ nav ul {
     display: flex;
     padding-top: 40px;
     padding-right: 10px;
-    justify-content: right;
-    margin-left: max(350px, 10px);
+    justify-content: center;
+    margin-right: 180px;
 }
 
 nav ul li {
     padding-right: 25px;
+}
+
+.hamburgerbars {
+    margin-right: 5%;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+/* Home page*/
+
+
+.background_image {
+    background-image: url(image/learn-2405206_1920_small.jpg);
+    height: 350px;
+    background-size: cover;
+}
+
+.header_homepage {
+    margin: 50px 0px 20px 240px;
+    font-family: oswald;
+    font-size: 30px;
+}
+
+
+@media (min-width: 700px) {
+
+    /*gobal*/
+
+    .hamburgerbars {
+        display: none;
+    }
+
+    /*Home*/
+
+    .background_image {
+        background-image: url(image/learn-2405206_1920.jpg);
+        height: 450px;
+        background-size: cover;
+    }
+
 
 }
