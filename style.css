@@ -13,9 +13,28 @@ a {
     color: black;
 }
 
+h2 {
+    font-family: oswald;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 p {
     font-family: "source sans pro", 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
+}
+
+.cta_button {
+    background-color: var(--top_header_color);
+    width: 51px;
+    color: #fff;
+    border-radius: 10px;
+    border-color: #fff;
+    padding: 2px 15px 2px 15px;
+    font-family: oswald;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
 }
 
 :root {
@@ -68,9 +87,7 @@ nav ul li {
     padding-right: 25px;
 }
 
-.hamburgerbars {
-    margin-right: 5%;
-}
+
 
 #hamburger-menu {
     display: none;
@@ -90,6 +107,8 @@ nav ul li {
     font-family: oswald;
     font-size: 30px;
 }
+
+
 
 
 @media (min-width: 700px) {
