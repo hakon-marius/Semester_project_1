@@ -4,9 +4,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    text-transform: capitalize;
-    list-style-type: none;
-    text-decoration: none;
 }
 
 a {
@@ -19,9 +16,12 @@ h2 {
     font-weight: bold;
 }
 
-p {
+body {
     font-family: "source sans pro", 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
+    color: black;
+    height: 100vh;
+
 }
 
 .cta_button {
@@ -93,13 +93,71 @@ nav ul li {
     display: none;
 }
 
+
+
 /* Home page*/
 
+.home_grid_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 10px;
+    margin: auto;
+}
+
+.home_grid_item {
+    background-color: #EDF6F6;
+    color: black;
+}
+
+.home_grid_item:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.exhibition_hall {
+    width: 100%;
+    height: 100%;
+}
+
+.home_grid_item:nth-child(2) {
+    grid-column: 3;
+    padding: 65px;
+}
+
+
+.home_grid_item:nth-child(3) {
+    grid-row: 2 / 4;
+    padding: 90px 65px;
+}
+
+.home_grid_item:nth-child(4) {
+    grid-column: 2;
+    padding: 90px 65px;
+}
+
+.home_grid_item:nth-child(6) {
+    grid-column: 2 / 4;
+    padding: 90px 65px;
+    display: flex;
+    flex-direction: row;
+}
+
+.Child_reading,
+.teacher_greating,
+.looking_in_a_microscope,
+.holding_a_plant {
+    width: 80%;
+    height: 300px;
+
+    /*max-width: 453px;
+    max-height: 312px;
+    */
+}
 
 .background_image {
     background-image: url(image/learn-2405206_1920_small.jpg);
     height: 350px;
-    background-size: cover;
 }
 
 .header_homepage {
@@ -109,6 +167,19 @@ nav ul li {
 }
 
 
+/*footer*/
+
+.footer_top_bar {
+    background-color: var(--top_header_color);
+    height: 64px;
+    color: #fff;
+    margin: 15px 0px 15px 0px;
+    align-self: center;
+}
+
+.footer_section_one {
+    margin-top: 25px;
+}
 
 
 @media (min-width: 700px) {
@@ -126,6 +197,5 @@ nav ul li {
         height: 450px;
         background-size: cover;
     }
-
 
 }
