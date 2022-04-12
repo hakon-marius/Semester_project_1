@@ -84,22 +84,8 @@ body {
     margin: -10px 30px;
     top: 105px;
     position: absolute;
-
-
 }
 
-/*
-.Bottom_header a {
-    display: inline-flex;
-    color: black;
-    font-family: oswald;
-    font-size: 25px;
-    font-weight: bold;
-    margin-left: 15px;
-    align-self: center;
-    border-color: var(--top_header_color);
-}
-*/
 .Bottom_header {
     height: 95px;
     background-color: var(--bottom_header_color);
@@ -253,7 +239,7 @@ nav {
 }
 
 .header_homepage {
-    margin: 40px 0px 35px 140px;
+    margin: 40px auto 35px auto;
     font-family: oswald;
     font-size: 27px;
     color: #fff;
