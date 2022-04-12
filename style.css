@@ -32,6 +32,8 @@ h2 {
     margin-bottom: 15px;
 }
 
+
+
 h1,
 h2,
 h3,
@@ -57,10 +59,12 @@ body {
     font-weight: bold;
 }
 
+
 .top_header {
     height: 68px;
     background-color: var(--top_header_color);
     display: flex;
+
 }
 
 .top_header a {
@@ -78,7 +82,6 @@ body {
     padding: 0px 15px 0px 15px;
     border-color: var(--top_header_color);
     border-style: solid;
-    border-color: var(--top_header_color);
     margin: -10px 30px;
     top: 105px;
     position: absolute;
@@ -182,6 +185,7 @@ nav {
 .exhibition_hall {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .home_grid_item:nth-child(2) {
@@ -225,14 +229,16 @@ nav {
     width: 100%;
     max-height: 200px;
     object-fit: cover;
+
 }
 
 .background_image {
-    background-image: url(image/learn-2405206_1920_small.jpg);
+    background-image: url(Image/learn-2405206_1920.jpg);
     height: 350px;
     margin-bottom: 15px;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 .header_homepage {
@@ -330,108 +336,114 @@ footer {
     footer {
         height: 800px;
     }
-}
 
-
-
-@media only screen and (min-width: 800px) {
-
-    /*gobal*/
-
-    nav {
-        display: inline-flex;
-        height: 0;
-        left: 50px;
-        top: 95px;
+    .header_homepage {
+        font-size: 30px;
+        width: 336px;
+        padding: 5px 28px
     }
 
-    nav ul li a {
-        left: 250px;
-        position: static;
-        top: -55px;
+
+
+    @media only screen and (min-width: 800px) {
+
+        /*gobal*/
+
+        nav {
+            display: inline-flex;
+            height: 0;
+            left: 50px;
+            top: 95px;
+        }
+
+        nav ul li a {
+            left: 250px;
+            position: static;
+            top: -55px;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        .hamburgerbars {
+            display: none;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            padding: 6px 8px;
+        }
+
+        footer {
+            height: 360px;
+        }
+
+        .tickets {
+            display: inline-flex;
+        }
+
+        .bottom_header_tickets {
+            display: none;
+        }
+
+        .home_grid_item:nth-child(6) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .holding_a_plant {
+            width: min(380px, 550px);
+        }
+
+        /*Home*/
+
+        .background_image {
+            background-image: url(image/learn-2405206_1920.jpg);
+            height: 450px;
+            background-size: cover;
+            background-position-y: 80%;
+        }
+
     }
 
-    nav ul {
-        display: flex;
+    @media (min-width: 1200px) {
+
+
+
+        /* index*/
+
+        .home_grid_item:nth-child(1) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .home_grid_item:nth-child(2) {
+            grid-column: 2 / 4;
+            padding: 30px 65px;
+        }
+
+        .home_grid_item:nth-child(2),
+        .home_grid_item:nth-child(3),
+        .home_grid_item:nth-child(4),
+        .home_grid_item:nth-child(5) {
+            padding: 30px 40px;
+        }
+
+        .home_grid_item:nth-child(6) {
+            grid-column: 2 / 4;
+            flex-direction: column;
+        }
+
+        .holding_a_plant {
+            width: min(380px, 380px);
+            /* margin-left: -28px;*/
+            margin-right: 44px;
+        }
+
+        .home_grid_item:nth-child(6) {
+            display: flex;
+            flex-direction: row;
+        }
+
     }
-
-    .hamburgerbars {
-        display: none;
-    }
-
-    nav a:hover {
-        background-color: #fff;
-        padding: 6px 8px;
-    }
-
-    footer {
-        height: 360px;
-    }
-
-    .tickets {
-        display: inline-flex;
-    }
-
-    .bottom_header_tickets {
-        display: none;
-    }
-
-    .home_grid_item:nth-child(6) {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .holding_a_plant {
-        width: min(380px, 550px);
-    }
-
-    /*Home*/
-
-    .background_image {
-        background-image: url(image/learn-2405206_1920.jpg);
-        height: 450px;
-        background-size: cover;
-    }
-
-}
-
-@media (min-width: 1200px) {
-
-
-
-    /* index*/
-
-    .home_grid_item:nth-child(1) {
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-
-    .home_grid_item:nth-child(2) {
-        grid-column: 2 / 4;
-        padding: 30px 65px;
-    }
-
-    .home_grid_item:nth-child(2),
-    .home_grid_item:nth-child(3),
-    .home_grid_item:nth-child(4),
-    .home_grid_item:nth-child(5) {
-        padding: 30px 40px;
-    }
-
-    .home_grid_item:nth-child(6) {
-        grid-column: 2 / 4;
-        flex-direction: column;
-    }
-
-    .holding_a_plant {
-        width: min(380px, 380px);
-        /* margin-left: -28px;*/
-        margin-right: 44px;
-    }
-
-    .home_grid_item:nth-child(6) {
-        display: flex;
-        flex-direction: row;
-    }
-
-}
