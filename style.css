@@ -83,8 +83,8 @@ body {
     border-color: var(--top_header_color);
     border-style: solid;
     margin: -10px 30px;
-    top: 105px;
-    position: absolute;
+    /*  top: 105px;
+    position: absolute;*/
 }
 
 .Bottom_header {
@@ -93,6 +93,9 @@ body {
     font-family: oswald;
     font-size: 25px;
     font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .tickets {
@@ -107,11 +110,12 @@ body {
 
 nav {
     background-color: var(--bottom_header_color);
-    position: absolute;
-    width: 200px;
-    height: 420px;
+    /*position: absolute;*/
+    /* width: 200px;*/
+    /*height: 420px;
     top: 140px;
     right: 0px;
+    display: none;*/
 }
 
 nav li {
@@ -125,20 +129,26 @@ nav ul li {
 
 nav ul {
     right: 0px;
+    display: flex;
 }
 
+/*
 nav {
     display: none;
-}
+}*/
 
 #hamburger-menu:checked~nav {
-    display: block;
-    padding: 10px 10px 10px 25px;
+    display: inline-flex;
+    /*padding: 10px 10px 10px 25px;*/
 }
 
+
+
+
+/*
 #hamburger-menu:checked~nav {
     display: inline-block;
-}
+*/
 
 #hamburger-menu {
     display: none;
@@ -148,12 +158,13 @@ nav {
     right: 30px;
     position: absolute;
     top: 105px;
+    display: none;
 }
 
 #site-search {
     height: 25px;
     width: 100px;
-    border-style: 10px solid black;
+    border-style: solid;
     border-radius: 5px;
     border-color: black;
     padding: 10px;
@@ -308,6 +319,7 @@ footer {
 }
 
 @media only screen and (max-width: 799px) {
+
     .home_grid_container {
         display: block;
     }
@@ -317,7 +329,6 @@ footer {
     }
 
     .home_grid_item:nth-child(2) {
-
         margin-bottom: 10px;
     }
 
@@ -343,7 +354,25 @@ footer {
         padding: 5px 28px
     }
 
+    .hamburgerbars {
+        display: block;
+    }
 
+
+
+    nav {
+        background-color: var(--bottom_header_color);
+        position: absolute;
+        width: 200px;
+        height: 420px;
+        top: 140px;
+        right: 0px;
+
+    }
+
+    nav ul {
+        display: block;
+    }
 
     @media only screen and (min-width: 800px) {
 
@@ -364,10 +393,17 @@ footer {
 
         nav ul {
             display: flex;
+
         }
 
         .hamburgerbars {
-            display: none;
+            /*  display:  ;*/
+            visibility: hidden;
+        }
+
+        #hamburger-menu:checked~nav {
+            display: block;
+            /* padding: 10px 10px 10px 25px;*/
         }
 
         nav a:hover {
@@ -409,8 +445,6 @@ footer {
 
     @media (min-width: 1200px) {
 
-
-
         /* index*/
 
         .home_grid_item:nth-child(1) {
@@ -447,3 +481,4 @@ footer {
         }
 
     }
+}
